@@ -7,24 +7,35 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: url("page-bg.jpg");
+  background-image: url("images/page-bg.jpg");
   background-repeat: round;
   background-size: cover;
   background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto;
 }
 .left {
   height: 100%;
+  width: 25%;
   position: fixed;
   background-color: #a43e49;
-  margin-left: 90px;
   overflow: visible;
-  width: 20%;
   padding: 0px;
   z-index: 66;
+  margin-left: 5%;
+}
+.imageContainer {
+  height: 225px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .img-fluid {
   margin-top: 35px;
   height: 60%;
+}
+a {
+  color: transparent;
+  text-decoration: none;
 }
 
 .fa {
@@ -78,13 +89,21 @@ li a:hover:not(.active) {
   color: #a43e49;
 }
 .contain {
-  margin-left: 30%;
   position: relative;
   color: white;
   margin-bottom: 25px;
+  grid-column: 2/-1;
+  width: auto;
+  padding: 25px;
 }
 .contain h1 {
   padding: 20px;
+}
+#sec {
+  border-top: 2px solid white;
+  padding-top: 100px;
+  border-bottom: 2px solid white;
+  padding-bottom: 30px;
 }
 
 .goodat {
@@ -122,11 +141,12 @@ button {
 }
 
 @media (max-width: 822px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
   .left {
     display: none;
-  }
-  .contain {
-    margin-left: 0px;
   }
 }
 
