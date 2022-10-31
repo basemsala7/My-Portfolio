@@ -125,20 +125,6 @@ li a:hover:not(.active) {
 .goodat:hover .bron {
   display: block;
 }
-input,
-textarea {
-  background-color: rgba(250, 250, 250, 0.1);
-  width: 100%;
-  padding: 5px;
-  border: 1px solid white;
-  margin: 15px;
-}
-button {
-  color: #a43e49;
-  padding: 8px;
-  border-radius: 5px;
-  font-weight: bold;
-}
 
 @media (max-width: 822px) {
   body {
@@ -150,15 +136,3 @@ button {
   }
 }
 
-#up {
-  padding: 15px;
-  font-weight: bold;
-  position: fixed;
-  bottom: 15px;
-  color: white;
-  right: 20px;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 1px solid;
-  transition: all 1s;
-}
